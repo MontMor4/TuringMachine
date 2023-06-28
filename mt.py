@@ -3,14 +3,14 @@ import sys
 
 def main():
 
-    # Verificar se a quantidade correta de argumentos foi fornecida
-    # if len(sys.argv) != 3:
-    #     print('Usar: ./mt [MT] [Word]')
-    #     exit()
+     #Verificar se a quantidade correta de argumentos foi fornecida
+    if len(sys.argv) != 3:
+         print('Usar: ./mt [MT] [Word]')
+         exit()
 
     # Argumentos da linha de comando
-    arquivo_json = 'mt3.json' #sys.argv[1]
-    palavra = 'bcaba' #sys.argv[2]
+    arquivo_json = sys.argv[1]
+    palavra = sys.argv[2]
 
     # Carregar dados do JSON
     with open(arquivo_json) as arquivo:
