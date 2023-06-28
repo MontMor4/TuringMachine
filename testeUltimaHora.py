@@ -9,8 +9,8 @@ def main():
     #     exit()
 
     # Argumentos da linha de comando
-    arquivo_json = 'mt3.json' #sys.argv[1]
-    palavra = 'bcaba' #sys.argv[2]
+    arquivo_json = 'mt.json' #sys.argv[1]
+    palavra = '1' #sys.argv[2]
 
     # Carregar dados do JSON
     with open(arquivo_json) as arquivo:
@@ -65,7 +65,6 @@ def main():
                     
             else: 
                 if i != num_transicoes-1: continue
-                else: fez_transicao = False
             
             if(fez_transicao):
                 estado_atual = transicoes[i][1 + num_trilhas]
